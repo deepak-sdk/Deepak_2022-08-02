@@ -1,0 +1,463 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+.banner-container {
+  width: 100%;
+  height: 100vh;
+  background: url("https://wallpapercave.com/wp/wp2483002.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+}
+.banner-container p {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.banner-container h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.color-text {
+  color: rgb(252, 94, 55);
+}
+.banner-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.btn {
+  width: fit-content;
+  background-color: rgb(252, 94, 55);
+  color: white;
+  text-transform: capitalize;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  /* border-radius: 5px; */
+  cursor: pointer;
+}
+.choose-program-inner-container,
+.classes-header {
+  margin: 50px 5px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+.header h3 {
+  text-transform: uppercase;
+  /* font-size: 1.6rem; */
+}
+.header p {
+  min-width: 280px;
+  text-align: center;
+}
+.program-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 70px 20px;
+  gap: 40px;
+}
+.list-details {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.list-icon img {
+  width: 60px;
+  height: 60px;
+}
+.list-details p {
+  text-align: center;
+}
+.list-details a {
+  text-decoration: none;
+  color: rgb(252, 94, 55);
+  font-size: 14px;
+}
+.program-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 280px;
+}
+.list-description span {
+  color: rgb(101, 126, 235);
+  text-transform: capitalize;
+}
+.become-member {
+  background-image: url("../images/cta-bg.jpg");
+  padding: 50px 50px 80px 50px;
+  display: flex;
+  justify-content: center;
+}
+.become-member-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+.become-member-inner h2 {
+  /* font-size: 1.4rem; */
+  text-transform: uppercase;
+  text-align: center;
+}
+.become-member-inner p {
+  text-align: center;
+  /* font-size:  .8rem;  */
+}
+/* .become-member-inner img {
+  width: fit-content;
+} */
+.classes-schedules-container {
+  margin: 50px 0;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.first-training-class p {
+  color: rgb(240, 72, 42);
+}
+.card > .btn {
+  background-color: rgb(240, 72, 42);
+  font-size: 1rem;
+}
+.view-all-card {
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 10px;
+  background-color: rgb(240, 72, 42);
+  color: white;
+}
+.card a {
+  text-decoration: none;
+  color: black;
+}
+.card a:hover {
+  color: rgb(240, 72, 42);
+}
+.training-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.training-class p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.training-class img {
+  width: 30px;
+}
+.schedule-class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  gap: 20px;
+}
+.schedule-class img {
+  width: auto;
+  border-radius: 10px;
+}
+.schedule-class h2 {
+  font-size: 1.2rem;
+}
+.schedule-class p {
+  font-size: 0.8rem;
+}
+.schedule-btn {
+  background-color: rgb(240, 72, 42);
+}
+.footer {
+    margin: 100px 10px 30px 10px;
+    display: flex;
+    justify-content: center
+}
+.footer p{
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 560px) and (max-width: 768px) {
+  .header p {
+    width: 500px;
+  }
+  .program-list {
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .list-icon img {
+    width: 110px;
+    height: 110px;
+  }
+  .list-details p {
+    text-align: start;
+  }
+  .list-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .list-details h3 {
+    font-size: 1rem;
+  }
+  .header h3 {
+    /* text-transform: uppercase; */
+    font-size: 1.6rem;
+  }
+  .become-member-inner h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .become-member-inner p {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .schedule-class h2 {
+    font-size: 1.4rem;
+  }
+  .schedule-class p {
+    font-size: 1rem;
+  }
+  .card {
+    width: 400px;
+  }
+  .classes-schedules-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .schedule-class h2 {
+    font-size: 1.5rem;
+  }
+  .schedule-class p {
+    font-size: 1.1rem;
+  }
+  .program-list-container {
+    justify-content: center;
+  }
+  .program-list {
+    width: 500px;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .list-icon img {
+    width: 120px;
+    height: 120px;
+  }
+  .list-details p {
+    text-align: start;
+    font-size: 15px;
+  }
+  .list-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .list-details h3 {
+    font-size: 1rem;
+  }
+  .list-details {
+    gap: 0px;
+  }
+  .header p {
+    width: 550px;
+  }
+  .header h3 {
+    /* text-transform: uppercase; */
+    font-size: 1.6rem;
+  }
+  .become-member-inner h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .become-member-inner p {
+    text-align: center;
+    font-size: 1rem;
+    width: 760px;
+  }
+  .classes-wrap {
+    display: flex;
+  }
+  .classes-schedules-container {
+    margin: 0;
+  }
+  .schedule-class {
+    justify-content: flex-start;
+  }
+  .schedule-class img {
+    width: 100%;
+  }
+  .card {
+    width: 335px;
+  }
+  .schedule-class p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .header p {
+    width: 550px;
+  }
+  .program-list-container {
+    justify-content: center;
+  }
+  .program-list {
+    width: 484px;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+  .list-icon img {
+    width: 120px;
+    height: 120px;
+  }
+  .list-details p {
+    text-align: start;
+    font-size: 15px;
+  }
+  .list-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header h3 {
+    /* text-transform: uppercase; */
+    font-size: 1.6rem;
+  }
+  .become-member-inner h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .become-member-inner p {
+    text-align: center;
+    font-size: 1rem;
+    width: 860px;
+  }
+  .classes-wrap {
+    display: flex;
+  }
+  .classes-schedules-container {
+    margin: 0;
+  }
+  .schedule-class {
+    justify-content: flex-start;
+  }
+  .schedule-class img {
+    width: 100%;
+  }
+  .card {
+    width: 335px;
+  }
+  .schedule-class p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  .header p {
+    width: 550px;
+  }
+  .program-list-container {
+    justify-content: space-evenly;
+  }
+  .program-list {
+    width: 550px;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+  .list-icon img {
+    width: 120px;
+    height: 120px;
+  }
+  .list-details p {
+    text-align: start;
+    font-size: 15px;
+  }
+  .list-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header h3 {
+    /* text-transform: uppercase; */
+    font-size: 1.6rem;
+  }
+  .become-member-inner h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .become-member-inner p {
+    text-align: center;
+    font-size: 1rem;
+    width: 960px;
+  }
+  .classes-wrap {
+    display: flex;
+  }
+  .classes-schedules-container {
+    margin: 0;
+  }
+  .schedule-class {
+    justify-content: flex-start;
+  }
+  .schedule-class img {
+    width: 100%;
+  }
+  .card {
+    width: 460px;
+    margin: 10px;
+  }
+  .schedule-class p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .banner-container {
+    height: 760px;
+    width: 100%;
+  }
+}
